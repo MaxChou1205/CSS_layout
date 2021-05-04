@@ -1,0 +1,138 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>頁尾區域</title>
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous" />
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            .main-footer {
+                padding: 150px 0 0;
+                background: linear-gradient(-20deg, #3f5494, #08c7a5);
+            }
+
+            .container {
+                display: flex;
+                width: 1200px;
+                margin: auto;
+            }
+
+            .item {
+                width: 0;
+                flex-grow: 1;
+            }
+
+            .item h4 {
+                font-size: 24px;
+                color: white;
+                border-bottom: 1px dotted #fff;
+                margin: 0.5rem;
+                padding: 0.5rem;
+            }
+
+            .item nav {
+                display: flex;
+                flex-direction: column;
+                padding: 0.5rem;
+            }
+
+            .item nav a {
+                color: white;
+                text-decoration: none;
+                padding: 5px 0;
+            }
+
+            .item nav a:hover {
+                color: #fa0;
+            }
+
+            .subscription {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .subscription form {
+                display: flex;
+                width: 100%;
+                margin: auto;
+                padding: 0.5rem;
+            }
+
+            .subscription input {
+                border: none;
+                padding: 5px 10px;
+            }
+
+            .subscription input[type="text"] {
+                width: 0;
+                flex-grow: 1;
+            }
+
+            .subscription input[type="submit"] {
+                color: #70f6df;
+                background-color: #3e5293;
+            }
+
+            .copyright {
+                padding: 10px 0;
+                margin: 50px 0;
+                text-align: center;
+                background-color: #3e5293;
+                color: #70f6df;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main-footer">
+            <div class="container">
+                <div class="item">
+                    <h4>關於課程</h4>
+                    <nav>
+                        <a href="#"><i class="fas fa-angle-right"></i>課程目標</a>
+                        <a href="#"><i class="fas fa-angle-right"></i>辦學理念</a>
+                        <a href="#"><i class="fas fa-angle-right"></i>課程宗旨</a>
+                    </nav>
+                </div>
+                <div class="item">
+                    <h4>課程列表</h4>
+                    <nav>
+                        <a href="#"><i class="fas fa-angle-right"></i>A</a>
+                        <a href="#"><i class="fas fa-angle-right"></i>B</a>
+                        <a href="#"><i class="fas fa-angle-right"></i>C</a>
+                        <a href="#"><i class="fas fa-angle-right"></i>D</a>
+                    </nav>
+                </div>
+                <div class="item">
+                    <h4>服務項目</h4>
+                    <nav>
+                        <a href="#"><i class="fas fa-angle-right"></i>E</a>
+                        <a href="#"><i class="fas fa-angle-right"></i>F</a>
+                        <a href="#"><i class="fas fa-angle-right"></i>G</a>
+                        <a href="#"><i class="fas fa-angle-right"></i>H</a>
+                    </nav>
+                </div>
+                <div class="item subscription">
+                    <h4>訂閱電子報</h4>
+                    <form>
+                        <input type="text" name="" id="">
+                        <input type="submit" value="訂閱">
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                Copyright &copy; 2021
+            </div>
+        </div>
+    </body>
+
+</html>
