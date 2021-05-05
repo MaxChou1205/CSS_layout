@@ -1,0 +1,82 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400&display=swap" rel="stylesheet">
+        <title>圖文滿版</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+
+            .banner {
+                width: 100%;
+                height: 100vh;
+                background-color: #ccc;
+                background:
+                    linear-gradient(115deg, #7ef 50%, transparent 50%) center center/100% 100%,
+                    url("https://picsum.photos/1200/600") right center/ auto 100%;
+            }
+
+            .container {
+                width: 100%;
+                max-width: 1440px;
+                height: 100%;
+                margin: auto;
+            }
+
+            .banner-txt {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+
+            .banner-txt h1 {
+                font-size: 80px;
+                border-bottom: 1px solid #333;
+                font-weight: 900;
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .banner-txt small {
+                display: block;
+                font-size: 53px;
+                font-weight: 600;
+            }
+
+            .banner-txt h2 {
+                font-size: 50px;
+                font-weight: 300;
+            }
+
+            .banner-txt p {
+                font-size: 30px;
+                font-weight: 100;
+                width: 40%;
+                word-wrap: break-word;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="banner">
+            <div class="container">
+                <div class="banner-txt">
+                    <h1>大標題<small>副標題</small></h1>
+                    <h2>圖文滿版區塊</h2>
+                    <p>文字描述文字描述文字描述文字描述文字描述</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
