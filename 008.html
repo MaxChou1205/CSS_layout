@@ -1,0 +1,96 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>導覽列</title>
+    </head>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            background: linear-gradient(0deg, #fe70d8, #3713c1);
+        }
+
+        .container {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+            max-width: 1440px;
+            padding: 20px;
+            margin: auto;
+            height: 100px;
+        }
+
+        .logo {
+            width: 100px;
+            position: absolute;
+        }
+
+        .logo img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        .nav a:nth-child(2) {
+            margin-right: 140px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0 1rem;
+            position: relative;
+            transform: translateY(0px);
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            transform: translateY(-5px);
+        }
+
+        .nav a:after {
+            content: '';
+            position: absolute;
+            /* left: 50%; */
+            right: 50%;
+            height: 0;
+            bottom: -5px;
+            border-bottom: 1px solid #fff;
+            transition: 0.3s;
+        }
+
+        .nav a:hover:after {
+            left: 1rem;
+            right: 1rem;
+        }
+    </style>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="https://fakeimg.pl/50x50" alt="" srcset="">
+                </a>
+                <nav class="nav">
+                    <a href="#">AAAAAA</a>
+                    <a href="#">BBBBBB</a>
+                    <a href="#">CCCCCC</a>
+                    <a href="#">DDDDDD</a>
+                </nav>
+            </div>
+        </header>
+    </body>
+
+</html>
