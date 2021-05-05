@@ -1,0 +1,132 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>人員介紹</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                box-sizing: border-box;
+            }
+
+            html {
+                height: 100%;
+            }
+
+            body {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                background-color: #003;
+            }
+
+            .wrap {
+                width: 1400px;
+                display: flex;
+                margin: auto;
+            }
+
+            .item {
+                width: 370px;
+                margin: 15px;
+                text-align: center;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                transform: translatey(0px);
+                transition: .5s;
+            }
+
+            .item img {
+                width: 100%;
+                vertical-align: top;
+            }
+
+            .item:hover {
+                transform: translatey(-50px);
+            }
+
+            .item:hover {
+                background-image: linear-gradient(0deg, #FB8076, #FEB85D);
+            }
+
+            .item:hover .txt::before {
+                border-left: 184px solid #fc8f70;
+                border-right: 184px solid #fc8f70;
+            }
+
+            .item:hover h2 {
+                color: #fff;
+                border-bottom: 1px solid #fff;
+            }
+
+            .item:hover p {
+                color: #fff;
+            }
+
+            .txt {
+                padding: 20px;
+                position: relative;
+            }
+
+            .txt::before {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 0;
+                top: 0;
+                border-top: 50px solid transparent;
+                border-left: 184px solid #fff;
+                border-right: 184px solid #fff;
+                transform: translatey(-100%);
+            }
+
+            .txt h2 {
+                border-bottom: 1px solid #aaa;
+                padding-bottom: 0.5rem;
+                margin-bottom: 0.5rem;
+                transition: .2s;
+            }
+
+            .txt p {
+                transition: .2s;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrap">
+            <div class="item">
+                <img src="https://fakeimg.pl/300x300/">
+                <div class="txt">
+                    <h2>Title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto alias quis nobis
+                        asperiores itaque atque dolore laboriosam sed perspiciatis molestias eaque excepturi quos nisi
+                        culpa cum eveniet, temporibus earum.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://fakeimg.pl/300x300/">
+                <div class="txt">
+                    <h2>Title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus deserunt maxime vel nam
+                        cupiditate, laborum quas voluptatibus cumque pariatur!</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://fakeimg.pl/300x300/">
+                <div class="txt">
+                    <h2>Title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam minus deserunt maxime vel nam
+                        cupiditate, laborum quas voluptatibus cumque pariatur!</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
