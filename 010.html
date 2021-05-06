@@ -1,0 +1,118 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>方塊版面</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #000;
+            }
+
+            .wrap {
+                width: 100%;
+                margin: auto;
+                overflow: hidden;
+            }
+
+            .item {
+                float: left;
+                position: relative;
+            }
+
+            .item:first-child {
+                width: 50%;
+            }
+
+            .item:not(:first-child) {
+                width: 25%;
+            }
+
+            .item img {
+                width: 100%;
+                vertical-align: middle;
+            }
+
+            .txt {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding: 15px;
+                text-align: center;
+                color: #fff;
+                background-color: rgba(0, 0, 0, .6);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                transition: 0.3s;
+            }
+
+            .item:hover .txt {
+                opacity: 1;
+            }
+
+            .txt h3 {
+                margin-bottom: 1rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrap">
+            <div class="item">
+                <img src="https://fakeimg.pl/500x500/">
+                <div class="txt">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam odio nulla soluta delectus quod
+                        reprehenderit, nesciunt amet id quaerat voluptas!</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://fakeimg.pl/500x500/">
+                <div class="txt">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam odio nulla soluta delectus quod
+                        reprehenderit, nesciunt amet id quaerat voluptas!</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://fakeimg.pl/500x500/">
+                <div class="txt">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam odio nulla soluta delectus quod
+                        reprehenderit, nesciunt amet id quaerat voluptas!</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://fakeimg.pl/500x500/">
+                <div class="txt">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam odio nulla soluta delectus quod
+                        reprehenderit, nesciunt amet id quaerat voluptas!</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://fakeimg.pl/500x500/">
+                <div class="txt">
+                    <h3>Lorem, ipsum dolor.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam odio nulla soluta delectus quod
+                        reprehenderit, nesciunt amet id quaerat voluptas!</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
