@@ -1,0 +1,69 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>麵包屑</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+
+            body {
+                background-color: #ccc;
+            }
+
+            .wrap {
+                padding: 10px 0;
+                background: #ec008b;
+            }
+
+            .breadcrumb {
+                width: 90%;
+                margin: auto;
+                display: flex;
+            }
+
+            .breadcrumb li {
+                padding: 0 20px;
+            }
+
+            .breadcrumb a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            .breadcrumb a:hover,
+            .breadcrumb li:last-child a {
+                color: #ff0;
+            }
+
+            .breadcrumb li+li {
+                padding-left: 0;
+            }
+
+            .breadcrumb li+li::before {
+                content: '>';
+                color: #fff;
+                margin-right: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrap">
+            <ol class="breadcrumb">
+                <li><a href="#">A</a></li>
+                <li><a href="#">B</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">D</a></li>
+                <li><a href="#">E</a></li>
+            </ol>
+        </div>
+    </body>
+
+</html>
