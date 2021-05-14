@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>側邊選單</title>
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous" />
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                height: 100%;
+            }
+
+            body {
+                background-color: #546377;
+            }
+
+            .side-menu {
+                width: 300px;
+                height: 100%;
+                padding: 50px 0;
+                background: linear-gradient(0deg, #3381b0, #c2196c);
+                display: flex;
+                flex-direction: column;
+                box-shadow: 10px 0 10px hsla(240, 40%, 20%, 0.6);
+            }
+
+            .side-menu form {
+                display: flex;
+                margin: 0 10px;
+                padding: 5px 10px;
+                border: 1px solid #fff;
+                border-radius: 100px;
+
+            }
+
+            .side-menu form input,
+            .side-menu form button {
+                border: none;
+                background-color: transparent;
+            }
+
+            .side-menu form input {
+                width: 230px;
+            }
+
+            .side-menu form button {
+                width: 50px;
+            }
+
+            .side-menu form input:focus,
+            .side-menu form button:focus {
+                outline: none;
+            }
+
+            nav {
+                margin-top: 50px;
+            }
+
+            nav a {
+                display: block;
+                color: #fff;
+                padding: 10px;
+                text-decoration: none;
+                position: relative;
+            }
+
+            nav a+a::before {
+                content: '';
+                position: absolute;
+                border: 1px solid #fff;
+                left: 10px;
+                right: 10px;
+                top: 0;
+            }
+
+            nav a .fa {
+                font-size: 20px;
+                margin-right: -1rem;
+                transform: scale(0);
+                transition: 0.3s;
+            }
+
+            nav a:hover .fa {
+                margin-right: 0rem;
+                transform: scale(1);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="side-menu">
+            <form>
+                <input type="search">
+                <button><i class="fa fa-search"></i></button>
+            </form>
+            <nav>
+                <a href="#">
+                    <i class="fa fa-users"></i>
+                    lorem
+                </a>
+                <a href="#">
+                    <i class="fa fa-gavel"></i>
+                    lorem
+                </a>
+                <a href="#">
+                    <i class="fa fa-object-group"></i>
+                    lorem
+                </a>
+                <a href="#">
+                    <i class="fa fa-globe"></i>
+                    lorem
+                </a>
+                <a href="#">
+                    <i class="fa fa-baby"></i>
+                    lorem
+                </a>
+            </nav>
+        </div>
+    </body>
+
+</html>
