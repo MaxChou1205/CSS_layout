@@ -1,0 +1,145 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>表格</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                box-sizing: border-box
+            }
+
+            body {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                background: linear-gradient(90deg, #3d5894, #08c7a5);
+            }
+
+            .table {
+                width: 960px;
+                margin: auto;
+                padding: 20px;
+            }
+
+            .table caption {
+                caption-side: bottom;
+                text-align: right;
+                padding: 10px 0;
+                color: #eef;
+            }
+
+            .table table {
+                background-color: #fff;
+                width: 100%;
+                border: 3px double #666;
+                border-radius: 10px;
+            }
+
+            .table thead {
+                background: #333;
+                color: #fff;
+            }
+
+            .table thead th:first-child {
+                border-radius: 10px 0 0 0;
+            }
+
+            .table thead th:last-child {
+                border-radius: 0 10px 0 0;
+            }
+
+            .table tbody tr:nth-child(even) {
+                background-color: #ffa;
+            }
+
+            .table tbody tr:hover {
+                background-color: #fee;
+            }
+
+            .table tfoot td:first-child {
+                border-radius: 0 0 0 10px;
+            }
+
+            .table tfoot td:last-child {
+                border-radius: 0 0 10px 0;
+            }
+
+            .table th {
+                border: 1px solid #666;
+                padding: 5px;
+            }
+
+            .table td {
+                border: 1px solid #666;
+                padding: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="table">
+            <table>
+                <caption>
+                    範例一覽表
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">這是內容</th>
+                        <th scope="col">這是內容</th>
+                        <th scope="col">這是內容</th>
+                        <th scope="col">這是內容</th>
+                        <th scope="col">這是內容</th>
+                        <th scope="col">這是內容</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                    </tr>
+                    <tr>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                    </tr>
+                    <tr>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                    </tr>
+                    <tr>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                        <td>這是內容</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>備註</td>
+                        <td colspan="5">以上資料來自...</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </body>
+
+</html>
