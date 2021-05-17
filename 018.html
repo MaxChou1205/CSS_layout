@@ -1,0 +1,157 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>訊息對話</title>
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous" />
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                height: 100%;
+            }
+
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #d3effb;
+            }
+
+            .dialogue {
+                width: 500px;
+                padding: 20px;
+                box-shadow: 0 0 10px #3e92cc;
+                background-color: #f4f5f7;
+            }
+
+            .user {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 20px;
+            }
+
+            .user .avatar {
+                width: 60px;
+                text-align: center;
+                flex-shrink: 0;
+            }
+
+            /* .user .pic {
+                overflow: hidden;
+            } */
+
+            .user .pic img {
+                border-radius: 50%;
+                width: 100%;
+                vertical-align: middle;
+            }
+
+            .user .txt {
+                background-color: #aaa;
+                padding: 15px;
+                border-radius: 20px;
+                position: relative;
+                color: #fff;
+            }
+
+            .remote .txt {
+                margin-left: 20px;
+                margin-right: 80px;
+                background-color: rgb(253, 147, 147);
+            }
+
+            .local {
+                justify-content: flex-end;
+            }
+
+            .local .txt {
+                margin-right: 20px;
+                margin-left: 80px;
+                order: -1;
+                background-color: #3e92cc;
+            }
+
+            .remote .txt::before,
+            .local .txt::before {
+                content: '';
+                position: absolute;
+                top: 15px;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+            }
+
+            .remote .txt::before {
+                border-right: 10px solid rgb(253, 147, 147);
+                left: -8px;
+            }
+
+            .local .txt::before {
+                border-left: 10px solid #3e92cc;
+                right: -8px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="dialogue">
+            <div class="user remote">
+                <div class="avatar">
+                    <div class="pic">
+                        <img src="https://picsum.photos/100/100?random=12">
+                    </div>
+                    <div class="name">Blob</div>
+                </div>
+                <div class="txt">
+                    你好呀
+                </div>
+            </div>
+            <div class="user local">
+                <div class="avatar">
+                    <div class="pic">
+                        <img src="https://picsum.photos/100/100?random=10">
+                    </div>
+                    <div class="name">Alice</div>
+                </div>
+                <div class="txt">
+                    哈囉!
+                </div>
+            </div>
+            <div class="user remote">
+                <div class="avatar">
+                    <div class="pic">
+                        <img src="https://picsum.photos/100/100?random=12">
+                    </div>
+                    <div class="name">Blob</div>
+                </div>
+                <div class="txt">
+                    這是對話
+                </div>
+            </div>
+            <div class="user local">
+                <div class="avatar">
+                    <div class="pic">
+                        <img src="https://picsum.photos/100/100?random=10">
+                    </div>
+                    <div class="name">Alice</div>
+                </div>
+                <div class="txt">
+                    這是很長的句子!這是很長的句子!這是很長的句子!這是很長的句子!這是很長的句子!這是很長的句子!這是很長的句子!
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
