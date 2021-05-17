@@ -1,0 +1,101 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>登入表單</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                height: 100%;
+            }
+
+            body {
+                background: url("https://picsum.photos/id/703/1920/1080") no-repeat center center / cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .login {
+                width: 600px;
+                height: 400px;
+                background-color: rgba(0, 0, 0, .5);
+                border-radius: 10px;
+                border: 10px solid #fff;
+                box-shadow: 0 0 60px #000;
+                backdrop-filter: blur(5px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .form {
+                width: 400px;
+                color: #fff;
+            }
+
+            form h2 {
+                padding-bottom: 10px;
+                border-bottom: 1px solid #fff;
+                margin-bottom: 20px;
+            }
+
+            .form label {
+                line-height: 2;
+            }
+
+            .form input {
+                width: 100%;
+                border: 1px solid #aaa;
+                line-height: 2;
+                border-radius: 5px;
+            }
+
+            .form .btn-group {
+                font-size: 0;
+                margin-top: 20px;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .form .btn {
+                border-radius: 5px;
+                width: 190px;
+                border: none;
+                background-color: #6ab4fe;
+                color: #fff;
+                padding: 10px 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="login">
+            <form class="form">
+                <h2>會員登入</h2>
+                <div class="group">
+                    <label for="user_id">帳號</label>
+                    <input type="text" name="" id="user_id">
+                </div>
+                <div class="group">
+                    <label for="password">密碼</label>
+                    <input type="password" name="" id="password">
+                </div>
+                <div class="btn-group">
+                    <button class="btn">登入</button>
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
