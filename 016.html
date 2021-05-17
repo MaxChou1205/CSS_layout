@@ -1,0 +1,103 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>訂單進度條</title>
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous" />
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                height: 100%;
+            }
+
+            body {
+                display: flex;
+                align-items: center;
+                /* justify-content: center; */
+                background-color: #546377;
+            }
+
+            .list {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .list li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                width: 200px;
+                height: 200px;
+                background: linear-gradient(9deg, #185a9d, #43cea2);
+                color: #fff;
+                border-radius: 50%;
+                font-size: 2rem;
+                position: relative;
+                /* box-shadow: 0 0 0 4px #fff; */
+                border: 1px solid #fff;
+            }
+
+            .list li .fa {
+                font-size: 2.5rem;
+            }
+
+            .list li+li {
+                margin-left: 100px;
+            }
+
+            .list li+li::before {
+                content: '';
+                position: absolute;
+                background-color: #fff;
+                width: 100px;
+                height: 5px;
+                left: -100px;
+            }
+
+            .list li.active~li {
+                background: linear-gradient(9deg, #999, #ccc);
+            }
+
+            .list li.active~li::before {
+                background-color: #999;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ol class="list">
+            <li>
+                <i class="fa fa-file-alt"></i>
+                收到訂單
+            </li>
+            <li class="active">
+                <i class="fa fa-archive"></i>
+                備貨中
+            </li>
+            <li>
+                <i class="fa fa-truck"></i>
+                運送中
+            </li>
+            <li>
+                <i class="fa fa-check-circle"></i>
+                已送達
+            </li>
+        </ol>
+    </body>
+
+</html>
