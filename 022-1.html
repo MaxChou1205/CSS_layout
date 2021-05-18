@@ -1,0 +1,66 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>文字排版-1</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                box-sizing: border-box;
+            }
+
+            .container {
+                width: 1200px;
+                margin: auto;
+                padding: 100px 0;
+                display: flex;
+            }
+
+            .container h1 {
+                width: 400px;
+                text-align: right;
+                padding: 0 15px;
+                background-color: #d5c7b9;
+            }
+
+            .container h1::after {
+                content: '';
+                display: block;
+                width: 5rem;
+                height: 4px;
+                background-color: #000;
+                margin-left: auto;
+            }
+
+            .txt {
+                width: 800px;
+                padding: 0 15px;
+                column-count: 2;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrap">
+            <div class="container">
+                <h1>Lorem, ipsum dolor.</h1>
+                <div class="txt">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tenetur eligendi reprehenderit
+                        quisquam perspiciatis iusto in vero, atque unde, commodi optio ratione quidem esse quo aut saepe
+                        deleniti ut consequatur dolore cumque id quam culpa magni. Rerum dicta veniam laborum
+                        necessitatibus facere accusantium, quasi expedita fuga eum porro ipsa cum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eaque, id ab cum sapiente eius
+                        veniam ipsa molestias animi nemo itaque. Ipsum cumque facere suscipit blanditiis ullam expedita,
+                        dolorem vitae quod eveniet vero veniam deserunt non numquam at laudantium doloremque aut
+                        assumenda possimus. Quos perferendis velit consequatur unde obcaecati maxime.</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
