@@ -1,0 +1,104 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>文字排版-6</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                box-sizing: border-box;
+            }
+
+            .wrap {
+                margin: 100px 0;
+            }
+
+            .container {
+                width: 1200px;
+                margin: auto;
+                display: flex;
+            }
+
+            .container h1 {
+                width: 400px;
+                order: 1;
+                flex-shrink: 0;
+                font-size: 5rem;
+                color: #999;
+                padding-left: 30px;
+                position: relative;
+            }
+
+            .container h1::after {
+                content: '';
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 0;
+                left: 0;
+                border: 15px solid #f1b444;
+                transform: rotate(10deg);
+                z-index: -1;
+            }
+
+            .container h1::before {
+                content: '';
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                top: 0;
+                left: 0;
+                border: 15px solid #f1c555;
+                transform: rotate(30deg);
+                z-index: -1;
+            }
+
+            .txt {
+                width: 800px;
+                padding: 10px;
+                flex-shrink: 0;
+                column-count: 2;
+                column-gap: 30px;
+                box-shadow: 0 0 30px #ccc;
+            }
+
+            .txt p {
+                margin-bottom: 1rem;
+            }
+
+            .txt p:first-child::first-letter {
+                font-size: 40px;
+                float: left;
+                padding-right: 6px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrap">
+            <div class="container">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <div class="txt">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis laboriosam fuga sint libero
+                        perferendis sequi voluptate labore assumenda aliquid alias doloribus delectus vel voluptatem
+                        iure, doloremque, vero illum nemo eligendi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ea architecto consequuntur
+                        accusantium itaque tenetur dolores nesciunt nisi voluptatem soluta fuga cum saepe illum quasi
+                        repellat veniam, eveniet praesentium fugiat?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis laboriosam fuga sint libero
+                        perferendis sequi voluptate labore assumenda aliquid alias doloribus delectus vel voluptatem
+                        iure, doloremque, vero illum nemo eligendi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ea architecto consequuntur
+                        accusantium itaque tenetur dolores nesciunt nisi voluptatem soluta fuga cum saepe illum quasi
+                        repellat veniam, eveniet praesentium fugiat?</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
