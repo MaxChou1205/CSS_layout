@@ -1,0 +1,89 @@
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>文字排版-13</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                box-sizing: border-box;
+            }
+
+            .wrap {
+                margin: 100px 0;
+            }
+
+            .container {
+                width: 1200px;
+                margin: auto;
+                padding: 0 50px;
+            }
+
+            .container h1 {
+                width: 100%;
+                text-align: center;
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
+
+            .txt {
+                position: relative;
+                padding: 20px 15px 0;
+            }
+
+            .txt::before,
+            .txt::after {
+                content: '';
+                position: absolute;
+                width: 50px;
+                height: 50px;
+            }
+
+            .txt::before {
+                top: 0;
+                left: 0;
+                border-top: 3px solid #aaa;
+                border-left: 3px solid #aaa;
+            }
+
+            .txt::after {
+                bottom: 0;
+                right: 0;
+                border-right: 3px solid #aaa;
+                border-bottom: 3px solid #aaa;
+            }
+
+            .txt p {
+                margin-bottom: 1rem;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrap">
+            <div class="container">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <div class="txt">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis laboriosam fuga sint libero
+                        perferendis sequi voluptate labore assumenda aliquid alias doloribus delectus vel voluptatem
+                        iure, doloremque, vero illum nemo eligendi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ea architecto consequuntur
+                        accusantium itaque tenetur dolores nesciunt nisi voluptatem soluta fuga cum saepe illum quasi
+                        repellat veniam, eveniet praesentium fugiat?</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis laboriosam fuga sint libero
+                        perferendis sequi voluptate labore assumenda aliquid alias doloribus delectus vel voluptatem
+                        iure, doloremque, vero illum nemo eligendi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, ea architecto consequuntur
+                        accusantium itaque tenetur dolores nesciunt nisi voluptatem soluta fuga cum saepe illum quasi
+                        repellat veniam, eveniet praesentium fugiat?</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
